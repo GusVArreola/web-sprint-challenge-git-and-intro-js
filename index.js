@@ -209,17 +209,18 @@ Practice accessing data above by console.log-ing following items:
 
 //(1) Name of the first artist (0th index) in the array
 
-
+console.log("id"[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
 
-
+console.log(artists[2].bio);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 (not auto tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
-
+artists[9].name = 'Vincent Van Gogh'
+console.log('task 2', artists[9].name)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -228,13 +229,12 @@ Use getArtistByIndex to do the following:
 3. Return a string in the format `the artist at index {id} is {name}`
 ❗❗ NOTE: THE STRING YOU RETURN MUST MATCH THE FORMAT ABOVE OR IT WILL NOT PASS THE TEST! ❗❗
 
-🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
+🌟 EXAMPLE: if getArtistByIndex is invoked with the artists arra `ty and the number 0, it will returnhe artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(artists, id) {
+  return `the artist at index ${id} is ${artists[id].name}`
 }
-
-
+console.log(getArtistByIndex(artists, 0))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use copy to do the following: 
@@ -244,8 +244,8 @@ Use copy to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function listOfNames(id, name) {
+  
 }
 
 
